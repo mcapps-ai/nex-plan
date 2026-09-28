@@ -329,7 +329,9 @@ function render(){
  document.getElementById('h-f').textContent=FH[st.f];
  const ult=apm.reduce((m,x,i)=>x>0?i+1:m,0);
  document.getElementById('k-cap').textContent=usd(cap);
- document.getElementById('k-cap-d').textContent='Último aporte en el mes '+ult+' ('+D.m[ult-1]+'). Pico de caja en el mes '+fondo+'.';
+ const a3=apm.slice(0,3).reduce((a,b)=>a+b,0), rest=apm.map((x,i)=>x>0&&i>2?i+1:0).filter(Boolean);
+ const lst=rest.length>1?rest.slice(0,-1).join(', ')+' y '+rest[rest.length-1]:String(rest[0]||'');
+ document.getElementById('k-cap-d').textContent=Math.round(a3/cap*100)+'% en los meses 1 a 3 ('+usd(a3)+').'+(rest.length?' Refuerzos menores en '+(rest.length>1?'los meses ':'el mes ')+lst+' para sostener la caja mínima de USD 50.000.':'');
  const T=tot.reduce((a,b)=>a+b,0), NN=res.map((x,i)=>x+imp[i]), NT=NN.reduce((a,b)=>a+b,0);
  document.getElementById('k-v').textContent=usd(T);
  document.getElementById('k-v-d').textContent='Año 1 '+mill(tot[0])+' · Año 3 '+mill(tot[2]);
