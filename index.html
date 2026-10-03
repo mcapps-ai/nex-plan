@@ -1,4 +1,19 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex,nofollow"><title>NEX Investor Site</title>
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex,nofollow"><meta name="nex-build" content="2026-10-03c"><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="NEX"><link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png"><link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAADg0lEQVR42u2VXWyTVRiA3/ec79v3W9zKUOfgYpmZAwR/ogS5wUQvnD+ZIYaZEDQhYRhjHJosakwkIhg1MUZDBiZmYoBdgBIuhEQjiYgxcTi71XZt1wpuEQijlNL1a/v9nPN60TrY4rjDq75X5yQn73N+nvc92NjcBrcyGNziqAPqgDoAQJkPZBwApBS1KedERFIiY4gI9O86BCkkIjFEApCSEICx2vgmAHKK14jItEKIKIWYKRZUtUHTzUrZCXwfAIgIEYjAtGxJzCn7qsJsQxGSCkUPEW1jTk6s9iJElFKoqvbcplcC3/96aE8Q+I1NS3pe2J6Infnh+KEnul/sWP6AFIIrChGpqnroqz2dtzvdj7YNx7ND308uvk3r7W5XFbbvWKbg+ApHorknICKuqOvWP3XX0jYpxeDAztZl7V3dm5HhiW8+X3X/I491bUynor7rIjK1QbUta/zc+Xe3hZ9c2zKWya9d2dy/afmu/fHLedfWFUm04BXlc9PP9mzLpKITyYhTLFTKJQBWKjmlYvGT3X3J2G+GaRGAaZj5onhrYHSg/6FdvavvDOvHfvr708Mpo4ET0QIWEWmakZ2+mM9d3vrqzrs7VnteReEKAHDOJdHrb382cODUvoM/v9S3u1wuNzfqpyLTR05OdSwLSYKPDiYAgHOkhTQlIk0zpv6aGNz7XvOSls1b32Ds+nYYw0wqOjZyenTk9LlMnHPuevKOsH5ve6MXSEPja1Ys9gPCm2vq+55p2T9+d6Rz5YNPb9jiea4QAQAIIYjg26ODqfjvumFyruiGmb1aeu35VWtWhHd8Eduwfun2nnuGx68kpwohU52VdR4AFy1qMkxbt0JDX37c0tr2eNczmm4ASNOyLdve8eEBIiIiy7LeebN3nTbRt7Hz8MnJwaPpqwV3b//DH7x835b3h8tuwFnNIq6bTbPZEcEpFuLRXy+en5RSJv4Yzl3JRSO/ZKcvCCnPpmOJ2Jl0YjQ1PpIcj6STkdYwjGUK+4+fdQVNXSr9eaGYzbuXcpXsNU/hOKcOrlvkzHDGdcNCRCGCkjOjNmi6blXKju97gFAtZgIyTdv10QtEyFAVBYmgWA4CQbahqArOejQPAIxzIJJSVk/EGCeSUkrGGCIS1BAIIKVEBESQsuYBZwg3TP/7kaUQN0pVfWEAqCLnBc3pOiDmdqH6f1AH1AH/G+AfuZLH6pzAyNwAAAAASUVORK5CYII="><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#101421"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><title>NEX Investor Site</title>
+<script>
+(function(){var B='2026-10-03c',busy=false;
+function check(){if(busy||!navigator.onLine)return;busy=true;
+ var u=location.pathname+'?chk='+Date.now();
+ fetch(u,{cache:'no-store',headers:{'Range':'bytes=0-1500'}}).then(function(r){return r.text()}).then(function(t){
+  var m=t.slice(0,4000).match(/name="nex-build" content="([^"]+)"/);
+  if(m&&m[1]!==B){var k='nexrl'+m[1];try{if(sessionStorage.getItem(k))return;sessionStorage.setItem(k,'1')}catch(e){}
+   location.replace(location.pathname+'?v='+encodeURIComponent(m[1])+location.hash)}
+ }).catch(function(){}).then(function(){busy=false})}
+window.addEventListener('load',function(){setTimeout(check,1500)});
+document.addEventListener('visibilitychange',function(){if(document.visibilityState==='visible')check()});
+window.addEventListener('pageshow',function(e){if(e.persisted)check()});
+})();
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
 <style>
@@ -79,7 +94,7 @@ details[open] summary{margin-bottom:12px}
 .thumbs button{padding:0;border:2px solid transparent;border-radius:6px;overflow:hidden;background:none;cursor:pointer;aspect-ratio:16/9}
 .thumbs button img{width:100%;height:100%;object-fit:cover;display:block}
 .thumbs button[aria-current="true"]{border-color:var(--accent)}
-.stage:fullscreen{border-radius:0;background:#000}
+.stage:fullscreen{border-radius:0;background:#000} .stage.pfs{position:fixed;inset:0;z-index:9999;width:100vw;height:100vh;height:100dvh;max-width:none;aspect-ratio:auto;border-radius:0;background:#000;padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)} .stage .fsx{display:none} .stage.pfs .fsx,.stage:fullscreen .fsx{display:flex;position:absolute;top:calc(10px + env(safe-area-inset-top));right:calc(10px + env(safe-area-inset-right));z-index:2;width:44px;height:44px;border-radius:50%;border:0;background:rgba(255,255,255,.18);color:#fff;font-size:26px;line-height:1;align-items:center;justify-content:center;cursor:pointer} .stage.pfs .fsc,.stage:fullscreen .fsc{display:block} .stage .fsc{display:none;position:absolute;bottom:calc(12px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);z-index:2;color:#fff;background:rgba(0,0,0,.45);padding:4px 12px;border-radius:12px;font-size:13px} body.nofs{overflow:hidden}
 .subtabs{display:inline-flex;gap:4px;background:var(--chip);border:1px solid var(--line);border-radius:9px;padding:4px;justify-self:start;max-width:100%;overflow-x:auto}
 .subtabs button{font-family:var(--fd);font-weight:600;font-size:14px;padding:8px 16px;border:0;border-radius:6px;background:none;color:var(--muted);cursor:pointer;white-space:nowrap}
 .subtabs button[aria-selected="true"]{background:var(--panel);color:var(--navy);box-shadow:0 1px 2px rgba(0,0,0,.08)}
@@ -110,7 +125,7 @@ footer.disc a{color:var(--navy);text-decoration:underline}
   </div>
 </div>
 <div id="p-plan" class="tabpanel" role="tabpanel" aria-labelledby="t-plan">
-  <div class="stage" id="stage"><img id="slide" alt=""></div>
+  <div class="stage" id="stage"><img id="slide" alt=""><button type="button" class="fsx" id="fsx" aria-label="Salir de pantalla completa">&times;</button><span class="fsc" id="fsc"></span></div>
   <div class="nav">
     <div class="grp"><button class="btn" id="prev" type="button">Anterior</button><button class="btn" id="next" type="button">Siguiente</button><span class="count" id="count"></span></div>
     <div class="grp"><span class="slidetitle" id="stitle"></span><button class="btn" id="fs" type="button">Pantalla completa</button></div>
@@ -385,11 +400,22 @@ const SL=["data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBA
 let cur=0;
 const $=id=>document.getElementById(id);
 function show(i){cur=Math.max(0,Math.min(SL.length-1,i));$('slide').src=SL[cur];$('slide').alt='Lámina '+(cur+1)+': '+ST[cur];
- $('count').textContent=(cur+1)+' / '+SL.length;$('stitle').textContent=ST[cur];$('prev').disabled=cur===0;$('next').disabled=cur===SL.length-1;
+ $('count').textContent=(cur+1)+' / '+SL.length;if($('fsc'))$('fsc').textContent=(cur+1)+' / '+SL.length+(innerHeight>innerWidth?'  ·  Gire el teléfono para verla más grande':'');$('stitle').textContent=ST[cur];$('prev').disabled=cur===0;$('next').disabled=cur===SL.length-1;
  document.querySelectorAll('#thumbs button').forEach((b,k)=>b.setAttribute('aria-current',String(k===cur)));}
 SL.forEach((s,k)=>{const b=document.createElement('button');b.type='button';b.setAttribute('aria-label','Ir a la lámina '+(k+1));b.innerHTML='<img alt="" src="'+s+'">';b.onclick=()=>show(k);$('thumbs').appendChild(b)});
 $('prev').onclick=()=>show(cur-1);$('next').onclick=()=>show(cur+1);
-$('fs').onclick=()=>{const st=$('stage');try{if(document.fullscreenElement)document.exitFullscreen();else st.requestFullscreen().catch(()=>{})}catch(e){}};
+const fsEl=()=>document.fullscreenElement||document.webkitFullscreenElement;
+function fsOn(){const st=$('stage');st.classList.add('pfs');document.body.classList.add('nofs');show(cur);
+ try{const r=st.requestFullscreen||st.webkitRequestFullscreen;if(r){const p=r.call(st);if(p&&p.catch)p.catch(()=>{})}}catch(e){}
+ try{screen.orientation&&screen.orientation.lock&&screen.orientation.lock('landscape').catch(()=>{})}catch(e){}}
+function fsOff(){const st=$('stage');st.classList.remove('pfs');document.body.classList.remove('nofs');
+ try{if(fsEl()){(document.exitFullscreen||document.webkitExitFullscreen).call(document)}}catch(e){}
+ try{screen.orientation&&screen.orientation.unlock&&screen.orientation.unlock()}catch(e){}}
+$('fs').onclick=()=>{$('stage').classList.contains('pfs')?fsOff():fsOn()};
+$('fsx').onclick=e=>{e.stopPropagation();fsOff()};
+document.addEventListener('fullscreenchange',()=>{if(!fsEl())fsOff()});document.addEventListener('webkitfullscreenchange',()=>{if(!fsEl())fsOff()});
+addEventListener('resize',()=>{if($('stage').classList.contains('pfs'))show(cur)});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&$('stage').classList.contains('pfs'))fsOff()});
 $('stage').onclick=e=>{const r=e.currentTarget.getBoundingClientRect();show(cur+((e.clientX-r.left)>r.width/2?1:-1))};
 let tx=null;$('stage').addEventListener('touchstart',e=>{tx=e.touches[0].clientX},{passive:true});
 $('stage').addEventListener('touchend',e=>{if(tx===null)return;const d=e.changedTouches[0].clientX-tx;if(Math.abs(d)>40)show(cur+(d<0?1:-1));tx=null});
